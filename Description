@@ -1,0 +1,25 @@
+ibiann:~/Desktop/Group8$ cd OSGroup8
++ Change direction
+biann:~/Desktop/Group8$ cd OSGroup8 ls
+readcmd.c  readcmd.h  README.md  shell-template.c  tst.c
++ List of the folder in the OSGroup18
+
+ibiann:~/Desktop/Group8$ cd OSGroup8 gcc shell-template.c readcmd.c -o shell
++  compiles the C code in shell-template.c and readcmd.c to an executable binary shell, which you can run by typing ./shell. The -o flag sets the name of the output file, shell-template.c is the source code file.
+
+ibiann:~/Desktop/Group8$ cd OSGroup8 ./shell
++ output shell
+
+shell> ps -ef|grep firefox| wc -l
++ Execution shell
+trace_cmd
+seq[0]: (ps) (-ef) 
+seq[1]: (grep) (firefox) 
+seq[2]: (wc) (-l) 
+
+ibiann:~/Desktop/Group8$ cd OSGroup8 ps -ef
++ List of the process
+
+ibiann:~/Desktop/Group8$ cd OSGroup8 gcc tst.c readcmd.h readcmd.c -o group
+ibiann:~/Desktop/Group8$ cd OSGroup8 ./group
+shell> ps -ef| grep firefox| wc -l
